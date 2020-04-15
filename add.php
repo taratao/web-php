@@ -28,3 +28,13 @@
     </div>
 </body>
 </html>
+
+
+<?php
+if(isset($_GET['submit'])){
+    $uname=$_GET['uname'];
+    $passwd=$_GET['passwd'];
+
+    echo $passwd . ' ' . $uname;
+}
+?>

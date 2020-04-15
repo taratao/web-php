@@ -9,7 +9,8 @@
 <div class='container'>
     <div class='menu'><?php include 'menu.php'?></div>
     <div class='content'>
-        
+
     </div>
 </body>
 </html>
+
