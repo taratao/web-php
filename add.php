@@ -37,5 +37,7 @@ if(isset($_GET['submit'])){
     $passwd=$_GET['passwd'];
 
     echo $passwd . ' ' . $uname;
+
+    echo "<meta http-equiv='refresh' content='1'>";
 }
 ?>
