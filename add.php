@@ -38,6 +38,9 @@ if(isset($_GET['submit'])){
 
     echo $passwd . ' ' . $uname;
 
-    header("Refresh: 1; url=$_SERVER['PHP_SELF']");
+    $page = $_SERVER['PHP_SELF'];
+
+
+    echo '<meta http-equiv="refresh" content="1" >'
 }
 ?>
