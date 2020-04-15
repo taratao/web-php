@@ -8,6 +8,7 @@ body{
     background-color: wheat;
     padding: 10px;
     height: 100%;
+    width: 960px;
 }
 
 .menu{
@@ -18,5 +19,10 @@ body{
 .nav{
     font-size: 20px;
     color: honeydew;
-    padding: 10px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.nav:active{
+    background-color: black;
 }
