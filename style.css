@@ -1,0 +1,22 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+}
+
+.container{
+    background-color: wheat;
+    padding: 10px;
+    height: 100%;
+}
+
+.menu{
+    padding: 5px;
+    background-color: grey;
+}
+
+.nav{
+    font-size: 20px;
+    color: honeydew;
+    padding: 10px;
+}
