@@ -35,12 +35,21 @@
 if(isset($_GET['submit'])){
     $uname=$_GET['uname'];
     $passwd=$_GET['passwd'];
+    
 
-    echo $passwd . ' ' . $uname;
+    $connect = new mysqli('localhost', 'admin', '1234', 'QL_user');
+    if($connect->connect_error){
+        die("Connection failed: " . $conn->connect_error);
+    }
 
-    $page = $_SERVER['PHP_SELF'];
+    $sql = 'INSERT INTO user (username, password) VALUES($uname, $passwd)';
 
-
-    echo '<meta http-equiv="refresh" content="1" >'
+    if($connect->query($sql) === TRUE){
+        echo '<span class="msg">Insert table thành công</span>';
+    }else{
+        echo '<span class="msg">Insert table thất bại</span>';
+    }
+    $connect->close()
+    header("Refresh:0; url=add.php");
 }
 ?>

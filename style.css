@@ -27,3 +27,9 @@ body{
 .nav:active{
     background-color: black;
 }
+
+.msg{
+    font-size: 20px;
+    color: white;
+    background-color: red;
+}
